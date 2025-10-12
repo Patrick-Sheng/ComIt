@@ -1,8 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || "https://gnpmkxfhggqevttdbgiw.supabase.co";
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImducG1reGZoZ2dxZXZ0dGRiZ2l3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk3OTUzNTEsImV4cCI6MjA3NTM3MTM1MX0.h1BRO6KK_Xj0ch3Drgp2exLm3UX48BjBgaTbnR2ivLg";
-
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 export const supabase = createClient(supabaseUrl, supabaseKey);
 
 export type DbEvent = {
